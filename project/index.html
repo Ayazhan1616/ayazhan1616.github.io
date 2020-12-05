@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Art Works</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link src="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Sansita+Swashed:wght@700&family=Sora&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Piedra&family=Texturina&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body onload="animate()" id="body">
+      <div class="nav">
+        <div id="logo1" onclick="window.location.reload()">
+          <img src="css/diseño-grafico-png-5.png" alt="logo" >
+        </div>
+          <label for="toggle" id="label">&#9776;</label>
+      </div>
+      <input type="checkbox" name="" id="toggle">
+       
+
+      <div class="header">
+        <div id="logo" onclick="window.location.reload()">
+          <img src="css/diseño-grafico-png-5.png" alt="logo" >
+        </div>
+        <div id="header1">
+          <div id="BtnContainer">
+          <btn id="home" class="bt acti" onclick="window.location.reload()"><a href="index.html">Home</a></btn>
+          <btn id="works" class="bt" onclick="change(this)" ><a href="gallery.html">My works</a></btn>
+          <btn id="about" class="bt" onclick="change(this)" ><a href="about.html">About Us</a></btn>
+          <btn id="contact" class="bt" onclick="change(this)"><a href="contacts.html">Contact Us</a></btn>
+        </div>
+        </div>
+      </div>
+
+  
+    
+        <div id="home_page">     
+        <div class="main">
+         
+               <div id="text"> 
+                <h2>The</h2>
+                <h1>"EARTH"</h1>
+                <h2>without</h2>
+                <h1>"ART"</h1>
+                <h2>is just</h2>
+                <h1>"EH"</h1>
+
+               </div>
+        </div >
+
+        <div id="main_work">
+          <h2 id="h2">Featured Work</h2>      
+         <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="works/photo_2020-10-20_20-53-37.jpg" alt="" width="1100" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="works/photo_2020-10-20_20-53-58.jpg" alt="" width="1100" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="works/photo_2020-10-20_20-54-20.jpg" alt="" width="1100" height="500">
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+          </div>
+      </div>
+
+      
+
+
+        <footer>
+          <div id="sites">
+            <a href="http://www.instagram.com/zhaksykeldieva" target="_blank" rel="noopener">
+              <img id="logof" src="https://toppng.com/uploads/thumbnail//instagram-logo-white-circle-11549680078dhuqximjb0.png" style="height: 30px; width: 30px;" alt=""> 
+          </a>
+          <a href = "mailto: zhaksykeldievaayazhan@gmail.com" target="_blank" rel="noopener">
+            <img id="logof" src="https://thumbs.dreamstime.com/b/gmail-google-email-icon-image-can-also-be-used-social-media-logos-suitable-mobile-apps-web-apps-print-media-82809200.jpg" style="height: 30px; width: 30px; border-radius: 50%;" alt="" >
+          </a>
+          <a href = "https://telegram.me/zhaksykeldievaa" target="_blank" rel="noopener"> 
+            <img id="logof" src="https://icon-library.com/images/telegram-icon-png/telegram-icon-png-4.jpg" style="height: 30px; width: 30px;" alt="" >
+          </a>
+            
+        </div>
+        <br>
+         <p id="pfooter">
+          © Ayazhan Zhaxykeldiyeva 2020. All Rights Reserved. This website and all content, unless otherwise indicated. </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

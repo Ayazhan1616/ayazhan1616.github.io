@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Art Works</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link src="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Sansita+Swashed:wght@700&family=Sora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body onload="animate()" id="body">
+        <div class="nav">
+          <div id="logo1" onclick="window.location.reload()">
+            <img src="css/diseño-grafico-png-5.png" alt="logo" >
+          </div>
+            <label for="toggle" id="label">&#9776;</label>
+        </div>
+        <input type="checkbox" name="" id="toggle">
+
+
+        <div class="header">
+          <div id="logo" onclick="window.location.reload()">
+            <img src="css/diseño-grafico-png-5.png" alt="logo" >
+          </div>
+          <div id="header1">
+            <div id="BtnContainer">
+            <btn id="home" class="bt" onclick="window.location.reload()"><a href="index.html">Home</a></btn>
+            <btn id="works" class="bt acti" onclick="change(this)" ><a href="gallery.html">My works</a></btn>
+            <btn id="about" class="bt" onclick="change(this)" ><a href="about.html">About Us</a></btn>
+            <btn id="contact" class="bt" onclick="change(this)"><a href="contacts.html">Contact Us</a></btn>
+          </div>
+          </div>
+        </div>
+
+
+        <div class="gallery">
+            <h3 id="h2">Works</h3>
+            
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')" style="color: white;">Show all</button>
+              <button class="btn" onclick="filterSelection('buildings')" style="color: white;">Buildings and nature</button>
+              <button class="btn" onclick="filterSelection('portraits')" style="color: white;">Portraits</button>
+              <button class="btn" onclick="filterSelection('fashion')" style="color: white;">Fashion design</button>
+            </div>
+            
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+              <div class="column buildings">
+                <div class="content">
+                  <img src="works/photo_2020-10-20_20-53-16.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal1">
+                </div>
+              </div>
+              <div class="column buildings">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-53-30.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal2">
+                </div>
+              </div>
+              <div class="column buildings">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-54-26.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal3">
+                </div>
+              </div>
+              <div class="column buildings">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-54-31.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal4">
+                </div>
+              </div>
+              <div class="column buildings">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-54-38.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal5">
+                </div>
+              </div>
+
+              <div class="column portraits">
+                <div class="content">
+                  <img src="works/photo_2020-10-20_20-53-37.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal6">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-53-58.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal7">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-52-54.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal8">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-54-20.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal9">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-53-25.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal10">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-53-44.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal11">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-53-52.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal12">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-54-05.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal13">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-54-12.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal14">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-54-43.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal15">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-54-49.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal16">
+                </div>
+              </div>
+              <div class="column portraits">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-54-55.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal17">
+                </div>
+                </div>
+            <div class="column portraits">
+                    <div class="content">
+                    <img src="works/photo_2020-10-20_20-55-06.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal18">
+                </div>
+            </div>
+               <div class="column portraits">
+                    <div class="content">
+                    <img src="works/photo_2020-10-20_20-55-18.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal19">
+                </div>
+              </div>
+            
+              <div class="column fashion">
+                <div class="content">
+                  <img src="works/photo_2020-10-20_20-55-00.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal20">
+                </div>
+              </div>
+              <div class="column fashion">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-55-12.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal21">
+                </div>
+              </div>
+              <div class="column fashion">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-55-23.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal22">
+                </div>
+              </div>
+              <div class="column fashion">
+                <div class="content">
+                <img src="works/photo_2020-10-20_20-55-28.jpg" alt="" style="width:100%" class="img-thumbnail" data-toggle="modal" data-target="#modal23">
+                </div>
+              </div>
+            <!-- END GRID -->
+            </div>
+            
+            <!-- END MAIN -->
+            </div>
+
+
+            <div class="modal fade" id="modal1" >
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h3 class="modal-title">Nature</h3>
+                      </div>
+                      <div class="modal-body">
+                          <img src="works/photo_2020-10-20_20-53-16.jpg" alt="" class="img-responsive">
+                      </div>
+                      <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal fade" id="modal2" >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">KBTU</h3>
+                    </div>
+                    <div class="modal-body">
+                        <img src="works/photo_2020-10-20_20-53-30.jpg" alt="" class="img-responsive">
+                    </div>
+                    <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal3" >
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">SDU</h3>
+                  </div>
+                  <div class="modal-body">
+                      <img src="works/photo_2020-10-20_20-54-26.jpg" alt="" class="img-responsive">
+                  </div>
+                  <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal4" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Guitar</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="works/photo_2020-10-20_20-54-31.jpg" alt="" class="img-responsive">
+                </div>
+                <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5" >
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">On the other side of the door</h3>
+              </div>
+              <div class="modal-body">
+                  <img src="works/photo_2020-10-20_20-54-38.jpg" alt="" class="img-responsive">
+              </div>
+              <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade" id="modal6" >
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Tony Stark</h3>
+            </div>
+            <div class="modal-body">
+                <img src="works/photo_2020-10-20_20-53-37.jpg" alt="" class="img-responsive">
+            </div>
+            <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal7" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Portrait</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-53-58.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal8" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Portrait</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-52-54.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal9" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Horse</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-54-20.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal10" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Portrait</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-53-25.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal11" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Photo</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-53-44.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal12" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Portrait</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-53-52.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal13" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Wolverine</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-53-16.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal14" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Tony Stark</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-54-12.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal15" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Portrait</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-54-43.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal16" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Portrait</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-54-49.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal17" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Photo</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-54-55.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal18" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Portrait</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-55-06.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal19" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Portrait</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-55-18.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal20" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Fashion illustration</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-55-00.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal21" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Fashion illustration</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-55-12.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal22" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Fashion illustration</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-55-23.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal23" >
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Fashion illustration</h3>
+          </div>
+          <div class="modal-body">
+              <img src="works/photo_2020-10-20_20-55-28.jpg" alt="" class="img-responsive">
+          </div>
+          <button id="mod-b" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+            <footer>
+              <div id="sites">
+                <a href="http://www.instagram.com/zhaksykeldieva" target="_blank" rel="noopener">
+                  <img id="logof" src="https://toppng.com/uploads/thumbnail//instagram-logo-white-circle-11549680078dhuqximjb0.png" style="height: 30px; width: 30px;" alt=""> 
+              </a>
+              <a href = "mailto: zhaksykeldievaayazhan@gmail.com" target="_blank" rel="noopener">
+                <img id="logof" src="https://thumbs.dreamstime.com/b/gmail-google-email-icon-image-can-also-be-used-social-media-logos-suitable-mobile-apps-web-apps-print-media-82809200.jpg" style="height: 30px; width: 30px; border-radius: 50%;" alt="" >
+              </a>
+              <a href = "https://telegram.me/zhaksykeldievaa" target="_blank" rel="noopener"> 
+                <img id="logof" src="https://icon-library.com/images/telegram-icon-png/telegram-icon-png-4.jpg" style="height: 30px; width: 30px;" alt="" >
+              </a>
+                
+            </div>
+            <br>
+             <p id="pfooter">
+              © Ayazhan Zhaxykeldiyeva 2020. All Rights Reserved. This website and all content, unless otherwise indicated. </p>
+            </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
